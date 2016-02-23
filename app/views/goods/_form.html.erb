@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :good_type_id %><br>
-    <%= f.number_field :good_type_id %>
+    <%= f.select :good_type_id, good_types_select,{include_blank: true}, :class => 'form-control' %>
   </div>
   <div class="field">
     <%= f.label :price %><br>
