@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :good_types
   resources :goods
   
   get 'home', to: 'static_pages#home', as: :home
