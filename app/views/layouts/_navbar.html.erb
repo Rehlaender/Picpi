@@ -1,0 +1,13 @@
+<div class="navbar ">
+  <div class="navbar-header">
+    <%= link_to "#{image_tag('/ico.png')}".html_safe,:root, :class=>"navbar-brand" %>
+  </div>
+  <div class="">
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to 'Nosotros', :aboutus, :class=>"" %></li>
+      <li><%= link_to '¿Como comprar?', :help, :class=>"" %></li>
+      <li><%= link_to 'Iniciar sesion' , :login, :class=>"" %></li>
+      <li><%= link_to 'Registrarse' , :signup, :class=>"" %></li>
+    </ul>
+  </div>
+</div>
