@@ -1,14 +1,14 @@
-<table>
+<div class="container-fluid">
+  <div class="row row-eq-height">
     <% @goods.each do |good| %>
-          <div class="col-md-3">
-            <a href="<%= good_path(good) %>" class="thumbnail">
+            <div class="thumbnail">
               <div class="caption">
                 <%= good.name %>
               </div>
-              <div class="image">
-                <img src="" class="" />
+              <div class="">
+                <%= image_tag(good.image, class:"img-responsive") if good.image.present? %>
               </div>
-            </a>
-          </div>
+            </div>
         <% end %>
-</table>
+  </div>
+</div>
