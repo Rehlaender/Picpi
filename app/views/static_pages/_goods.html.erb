@@ -3,10 +3,10 @@
     <% @goods.each do |good| %>
             <div class="thumbnail">
               <div class="caption">
-                <%= good.name %>
+                <%= link_to good.name, good_path(good) %>
               </div>
               <div class="">
-                <%= image_tag(good.image, class:"img-responsive") if good.image.present? %>
+                <%= link_to image_tag(good.image, class:"img-responsive"), good_path(good) if good.image.present? %>
               </div>
             </div>
         <% end %>

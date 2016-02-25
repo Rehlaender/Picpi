@@ -27,7 +27,7 @@
         <td><%= image_tag(good.image, class:"img-responsive") if good.image.present? %></td>
         <td><%= link_to 'Show', good %></td>
         <td><%= link_to 'Edit', edit_good_path(good) %></td>
-        <td><%= link_to 'Destroy', good, method: :delete, data: { confirm: 'Are you sure?' } %></td>        
+        <td><%= link_to 'Destroy', good, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
