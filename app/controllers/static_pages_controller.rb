@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
   def home
+    @goods = Good.all
+    @goodtypes = GoodType.all
   end
 
   def help
