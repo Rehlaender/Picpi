@@ -10,10 +10,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-# Use bootstrap-sass
-gem 'bootstrap-sass', '~>3.3.5'
-# Use material design for bootstrap
-gem 'bootstrap-material-design'
+# Twitter boostrap
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+
 
 group :production do
   gem 'pg'
