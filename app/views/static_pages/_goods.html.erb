@@ -1,9 +1,14 @@
 <table>
     <% @goods.each do |good| %>
-        <tr>
-          <td><%= good.name %></td>
-          <td><%= good.description %></td>
-          <td><%= good.good_type.name %></td>
-        </tr>
-          <% end %>
+          <div class="col-md-3">
+            <a href="<%= good_path(good) %>" class="thumbnail">
+              <div class="caption">
+                <%= good.name %>
+              </div>
+              <div class="image">
+                <img src="" class="" />
+              </div>
+            </a>
+          </div>
+        <% end %>
 </table>
