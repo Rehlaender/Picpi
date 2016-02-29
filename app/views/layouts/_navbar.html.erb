@@ -25,6 +25,9 @@
         <li><%= link_to 'Iniciar sesion' , :login, :class=>"" %></li>
         <li><%= link_to 'Registrarse' , :signup, :class=>"" %></li>
         <li><%= link_to 'Nosotros', :aboutus, :class=>"" %></li>
+        <% if logged_in? %>
+          <li><%= link_to 'Cerrar sesion', logout_path, method: "delete"%></i></li>
+          <% end %>
       </ul>
     </div>
   </div>
