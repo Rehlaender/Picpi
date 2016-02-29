@@ -1,14 +1,13 @@
+<% @goods.each do |good| %>
 <div class="container-fluid">
   <div class="row row-eq-height">
-    <% @goods.each do |good| %>
-            <div class="thumbnail">
-              <div class="caption">
-                <%= link_to good.name, good_path(good) %>
-              </div>
-              <div class="">
-                <%= link_to image_tag(good.image, class:"img-responsive"), good_path(good) if good.image.present? %>
-              </div>
-            </div>
-        <% end %>
+        <div class="col-md-3 col-sm-12">
+          <%= link_to image_tag(good.image, class:"img-responsive"), good_path(good) if good.image.present? %>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <%= link_to good.name, good_path(good) %>
+          <%= link_to good.name, good_path(good) %>
+        </div>
+    <% end %>
   </div>
 </div>
