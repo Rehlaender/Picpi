@@ -61,6 +61,10 @@ class GoodTypesController < ApplicationController
     end
   end
 
+  def goods
+    @goods = GoodType.find(params[:id]).goods
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_good_type

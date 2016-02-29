@@ -15,7 +15,7 @@
           <ul class="dropdown-menu">
             <% @goodtypes = GoodType.all %>
             <% @goodtypes.each do |type| %>
-              <li><a href="#"><%= type.name %></a></li>
+              <li><%= link_to type.name, goods_good_type_path(type.id) %></li>
               <% end %>
           </ul>
         </li>
